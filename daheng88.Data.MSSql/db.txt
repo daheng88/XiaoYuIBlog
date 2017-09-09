@@ -1,0 +1,75 @@
+﻿INSERT INTO [loachs].[dbo].[loachs_users]
+           ([Type]
+           ,[UserName]
+           ,[Name]
+           ,[Password]
+           ,[Email]
+           ,[SiteUrl]
+           ,[AvatarUrl]
+           ,[Description]
+           ,[Displayorder]
+           ,[Status]
+           ,[PostCount]
+           ,[CommentCount]
+           ,[CreateDate])
+     VALUES
+           (1
+           ,'admin'
+           ,'admin'
+           ,'7FEF6171469E80D32C0559F88B377245'
+           ,''
+           ,''
+           ,''
+           ,''
+           ,''
+           ,1
+           ,1
+           ,1
+           ,'2015-06-10')
+GO
+
+INSERT INTO [loachs].[dbo].[loachs_links]
+           ([type]
+           ,[name]
+           ,[href]
+           ,[position]
+           ,[target]
+           ,[description]
+           ,[displayorder]
+           ,[status]
+           ,[createdate])
+     VALUES
+           (0
+           ,'首页'
+           ,'${siteurl}'
+           ,1
+           ,'_self'
+           ,'首页'
+           ,1000
+           ,1
+           ,'2015-06-12')
+GO
+INSERT INTO [loachs].[dbo].[loachs_links]
+           ([type]
+           ,[name]
+           ,[href]
+           ,[position]
+           ,[target]
+           ,[description]
+           ,[displayorder]
+           ,[status]
+           ,[createdate])
+     VALUES
+           (0
+           ,'管理'
+           ,'${siteurl}admin'
+           ,1
+           ,'_self'
+           ,'后台管理'
+           ,1000
+           ,1
+           ,'2015-06-12')
+GO
+
+
+
